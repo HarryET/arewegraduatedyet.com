@@ -43,7 +43,7 @@ const Home = ({ subjects }: { subjects: Subject[] }) => {
         <div className="w-full bg-red-400">
           <h1 className='text-6xl text-white font-bold px-16 py-6'>No.</h1>
         </div>
-        <div className='w-full flex flex-col text-gray-900 ml-16 space-y-4'>
+        <div className='flex flex-col text-gray-900 ml-16 space-y-4'>
           <h2 className="text-2xl font-semibold">Average Grades</h2>
           <div className='w-full items-start flex flex-col space-y-2'>
             {subjects.map((subject) => (
