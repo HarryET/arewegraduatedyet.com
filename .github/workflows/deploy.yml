@@ -12,11 +12,11 @@ jobs:
         with:
           node-version: 16
       - run: npm install
-      - run: npm run build
+      - run: npm run next export
       - name: Edgeserver Upload
         uses: lvkdotsh/edgeserver-action@v0.0.34
         with:
           app_id: "165458177117130752"
           server: https://api.edgeserver.io
           token: ${{ secrets.EDGESERVER_TOKEN }}
-          directory: dist
+          directory: out
