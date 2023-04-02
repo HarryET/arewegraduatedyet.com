@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: 16
       - run: npm install
-      - run: npm run next export
+      - run: npm run export
       - name: Edgeserver Upload
         uses: lvkdotsh/edgeserver-action@v0.0.34
         with:
